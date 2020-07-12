@@ -6,10 +6,8 @@ const sizePicker = document.getElementById("sizePicker")
 
 sizePicker.addEventListener('submit', function (event) {
     event.preventDefault();
-    const getHeight = document.getElementById("inputHeight");
-    let height = getHeight.value;
-    const getWidth = document.getElementById("inputWidth");
-    let width = getWidth.value;
+    const height = document.getElementById("inputHeight").value;
+    const width = document.getElementById("inputWidth").value;
     reset()
     makeGrid(height, width);
 })
